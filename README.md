@@ -1,12 +1,12 @@
-# Site PsicÃ³loga - Dra. Maria Oliveira
+# Site Psicóloga - Dra. Maria Oliveira
 
-Website profissional para consultÃ³rio de psicologia clÃ­nica.
+Website profissional para consultório de psicologia clínica.
 
 ## Tecnologias
 
 - React + TypeScript
 - Vite
-- Lucide React (Ã­cones)
+- Lucide React (ícones)
 - CSS puro (sem frameworks)
 
 ## Desenvolvimento
@@ -26,28 +26,4 @@ npm run build
 
 ```bash
 npm run preview
-```
-
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
 ```
