@@ -87,7 +87,7 @@ export default function App() {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
           <div className="logo">
-            <h1>Dra. Maria Oliveira</h1>
+            <h1>Psicóloga Waldirene Dias</h1>
             <span>Psicologia Clínica</span>
           </div>
 
@@ -95,7 +95,7 @@ export default function App() {
             <a href="#inicio" onClick={() => setIsMenuOpen(false)}>Início</a>
             <a href="#sobre" onClick={() => setIsMenuOpen(false)}>Sobre</a>
             <a href="#servicos" onClick={() => setIsMenuOpen(false)}>Serviços</a>
-            <a href="#contato" onClick={() => setIsMenuOpen(false)}>Contacto</a>
+            <a href="#contato" onClick={() => setIsMenuOpen(false)}>Contato</a>
             <div className="nav-cta">
               <Button variant="outline">Agendar Sessão</Button>
             </div>
@@ -135,19 +135,13 @@ export default function App() {
       {/* SECÇÃO SOBRE */}
       <SplitSection
         id="sobre"
-        imageSrc="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80"
-        title="Olá, sou a Dra. Maria."
+        imageSrc="./src/assets/foto-2.png"
+        title="Olá, sou a Psicologa Waldirene."
         subtitle="Quem Sou"
       >
         <p>
-          Dedico a minha carreira a acompanhar pessoas no seu processo de autodescoberta. Acredito que a terapia é um investimento na sua liberdade emocional.
+          Olá! Sinta-se muito bem vindo(a) por aqui! Meu nome é Waldirene e será um prazer te acompanhar em sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e idosos em um ambiente seguro, fundamentado na empatia, escuta ativa e acolhimento genuíno. Juntos, trabalharemos para ampliar a sua consciência sobre quem você é, e o que precisa no aqui e agora, permitindo que o contato consigo mesmo(a) se torne mais claro e verdadeiro. Acredito que cada pessoa traz consigo uma história única, repleta de desafios pessoais e também apresenta um potencial extraordinário de crescimento. O objetivo é capacitar você a se perceber integralmente, honrar suas necessidades e descobrir novas e potentes formas de viver uma vida plena e autêntica.
         </p>
-        <p>
-          Com especialização em psicologia clínica, foco-me em criar uma relação terapêutica baseada na transparência e no respeito pela sua história única.
-        </p>
-        <blockquote className="quote">
-          "A terapia não é sobre consertar o que está partido, mas sobre descobrir a força que já reside em si."
-        </blockquote>
       </SplitSection>
 
       {/* SECÇÃO DE CITAÇÃO */}
@@ -193,11 +187,11 @@ export default function App() {
       <footer id="contato" className="footer">
         <div className="container footer-grid">
           <div className="footer-brand">
-            <h2>Dra. Maria Oliveira</h2>
-            <p className="crp-text">Psicóloga Clínica | CRP 06/00000</p>
+            <h2>Waldirene Dias</h2>
+            <p className="crp-text">Psicóloga Clínica | CRP 04/69765</p>
             <div className="social-links">
-              <a href="#" aria-label="Instagram"><Instagram size={24} /></a>
-              <a href="#" aria-label="E-mail"><Mail size={24} /></a>
+              <a href="https://www.instagram.com/wal.dias.psi/" aria-label="Instagram"><Instagram size={24} /></a>
+              <a href="waldirene.dias.psi@hotmail.com" aria-label="E-mail"><Mail size={24} /></a>
             </div>
           </div>
 
@@ -206,24 +200,24 @@ export default function App() {
             <a href="#inicio">Início</a>
             <a href="#sobre">Sobre Mim</a>
             <a href="#servicos">Serviços</a>
-            <a href="#contato">Contacto</a>
+            <a href="#contacto">Contato</a>
           </div>
 
           <div className="footer-contact">
             <h4>Agendamentos</h4>
             <div className="contact-item">
               <Phone size={20} />
-              <a href="tel:+551199999999">(11) 99999-9999</a>
+              <a href="tel:+5534999855035">(34) 99985-5035</a>
             </div>
             <div className="contact-item">
               <MapPin size={20} />
-              <span>Av. Paulista, 1000 - São Paulo, SP</span>
+              <span>R. Santos Dumont, 163 - Jardim Santa Rita</span>
             </div>
             <Button variant="white" className="footer-btn">Mensagem WhatsApp</Button>
           </div>
         </div>
         <div className="container footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Dra. Maria Oliveira. Todos os direitos reservados.</p>
+          <p>&copy; {new Date().getFullYear()} Waldirene Dias. Todos os direitos reservados.</p>
         </div>
       </footer>
     </div>
