@@ -10,6 +10,7 @@ import {
   MapPin, 
   Instagram 
 } from 'lucide-react';
+import logoImg from '../assets/logo.png';
 import '../App.css';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -32,7 +33,7 @@ export default function Abordagem() {
       <section className="abordagem-hero">
         <div className="abordagem-hero-overlay"></div>
         <img 
-          src="./src/assets/logo.png" 
+          src={logoImg} 
           alt="Gestalt-terapia" 
           className="abordagem-hero-bg"
         />

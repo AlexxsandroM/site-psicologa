@@ -10,6 +10,8 @@ import {
   Heart,
   MessageCircle
 } from 'lucide-react';
+import fundoImg from '../assets/fundo.png';
+import foto2 from '../assets/foto-2.png';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'outline' | 'white';
@@ -72,7 +74,7 @@ export default function Home() {
       <section id="inicio" className="hero">
         <div className="hero-overlay"></div>
         <img 
-          src="./src/assets/fundo.png" 
+          src={fundoImg} 
           alt="Consultório acolhedor" 
           className="hero-bg"
         />
@@ -96,7 +98,7 @@ export default function Home() {
       {/* SECÇÃO SOBRE */}
       <SplitSection
         id="sobre"
-        imageSrc="./src/assets/foto-2.png"
+        imageSrc={foto2}
         title="Olá, sou a Psicologa Waldirene!"
         subtitle="Quem Sou"
       >
