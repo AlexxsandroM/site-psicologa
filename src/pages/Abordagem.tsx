@@ -32,7 +32,7 @@ export default function Abordagem() {
       <section className="abordagem-hero">
         <div className="abordagem-hero-overlay"></div>
         <img 
-          src="./src/assets/foto-2.png" 
+          src="./src/assets/logo.png" 
           alt="Gestalt-terapia" 
           className="abordagem-hero-bg"
         />
