@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Link } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
 import './App.css';
 import Home from './pages/Home';
@@ -41,10 +41,10 @@ function Layout({ children }: { children: React.ReactNode }) {
       {/* HEADER / NAVEGAÇÃO */}
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
-          <div className="logo">
+          <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
             <h1>Psicóloga Waldirene Dias</h1>
             <span>Psicologia Clínica</span>
-          </div>
+          </Link>
           <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
             <a href="/#inicio" onClick={() => setIsMenuOpen(false)}>Início</a>
             <a href="/#sobre" onClick={() => setIsMenuOpen(false)}>Sobre</a>

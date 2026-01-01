@@ -80,7 +80,7 @@ export default function Home() {
           <div className="hero-text-box">
             <span className="badge">Terapia Online & Presencial</span>
             <h1 className="hero-title">
-              O espaço para a sua <span className="italic">cura.</span>
+              Dar sentido à sua história no ritmo que é possível <span className="italic">para você.</span>
             </h1>
             <p className="hero-description">
               Encontre um lugar seguro para explorar as suas emoções, curar feridas e redescobrir o seu equilíbrio interior.
@@ -97,11 +97,11 @@ export default function Home() {
       <SplitSection
         id="sobre"
         imageSrc="./src/assets/foto-2.png"
-        title="Olá, sou a Psicologa Waldirene."
+        title="Olá, sou a Psicologa Waldirene!"
         subtitle="Quem Sou"
       >
         <p>
-          Olá! Sinta-se muito bem vindo(a) por aqui! Meu nome é Waldirene e será um prazer te acompanhar em sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e idosos em um ambiente seguro, fundamentado na empatia, escuta ativa e acolhimento genuíno. Juntos, trabalharemos para ampliar a sua consciência sobre quem você é, e o que precisa no aqui e agora, permitindo que o contato consigo mesmo(a) se torne mais claro e verdadeiro. Acredito que cada pessoa traz consigo uma história única, repleta de desafios pessoais e também apresenta um potencial extraordinário de crescimento. O objetivo é capacitar você a se perceber integralmente, honrar suas necessidades e descobrir novas e potentes formas de viver uma vida plena e autêntica.
+        Sinta-se muito bem vindo(a) por aqui! Meu nome é Waldirene e será um prazer te acompanhar em sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e idosos em um ambiente seguro, fundamentado na empatia, escuta ativa e acolhimento genuíno. Juntos, trabalharemos para ampliar a sua consciência sobre quem você é, e o que precisa no aqui e agora, permitindo que o contato consigo mesmo(a) se torne mais claro e verdadeiro. Acredito que cada pessoa traz consigo uma história única, repleta de desafios pessoais e também apresenta um potencial extraordinário de crescimento. O objetivo é capacitar você a se perceber integralmente, honrar suas necessidades e descobrir novas e potentes formas de viver uma vida plena e autêntica.
         </p>
       </SplitSection>
 
