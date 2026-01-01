@@ -11,7 +11,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import fundoImg from '../assets/fundo.png';
-import foto2 from '../assets/foto-2.png';
+import foto from '../assets/foto.png';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'outline' | 'white';
@@ -98,7 +98,7 @@ export default function Home() {
       {/* SECÇÃO SOBRE */}
       <SplitSection
         id="sobre"
-        imageSrc={foto2}
+        imageSrc={foto}
         title="Olá, sou a Psicologa Waldirene!"
         subtitle="Quem Sou"
       >
