@@ -11,7 +11,7 @@ import {
   MessageCircle
 } from 'lucide-react';
 import fundoImg from '../assets/fundo.png';
-import foto2 from '../assets/foto-2.PNG';
+import foto2 from '../assets/foto-2.png';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'outline' | 'white';
