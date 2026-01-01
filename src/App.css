@@ -730,11 +730,11 @@ a {
 .abordagem-hero-bg {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  left: 4%;
+  width: 20%;
+  height: 40%;
   object-fit: cover;
-  object-position: center;
+  object-position: left;
 }
 
 .abordagem-hero-overlay {
@@ -756,7 +756,7 @@ a {
 
 .abordagem-hero-title {
   font-size: 4rem;
-  margin: 6rem 0;
+  margin: 2rem 0;
   font-weight: 300;
   letter-spacing: 2px;
   font-style: italic;

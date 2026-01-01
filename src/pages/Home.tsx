@@ -72,7 +72,7 @@ export default function Home() {
       <section id="inicio" className="hero">
         <div className="hero-overlay"></div>
         <img 
-          src="https://images.unsplash.com/photo-1620912189865-1e8a33da4c5e?q=80&w=2069" 
+          src="./src/assets/fundo.png" 
           alt="Consultório acolhedor" 
           className="hero-bg"
         />
@@ -127,18 +127,17 @@ export default function Home() {
             <div className="service-card">
               <Heart className="icon" size={48} />
               <h3>Terapia Individual</h3>
-              <p>Trabalho focado em ansiedade, depressão e fortalecimento da autoestima.</p>
+              <p>Atenção a pessoas adultas (18+) com foco em ansiedade, depressão e fortalecimento da autoestima.</p>
             </div>
             <div className="service-card featured">
-              <div className="popular-tag">Mais Procurado</div>
               <Calendar className="icon" size={48} />
-              <h3>Consultas Online</h3>
-              <p>Apoio terapêutico no conforto do seu lar, com total segurança e sigilo.</p>
+              <h3>Terapia Presencial</h3>
+              <p>Encontros presenciais em ambiente acolhedor, com escuta ativa, sigilo e foco nas suas necessidades atuais.</p>
             </div>
             <div className="service-card">
               <MessageCircle className="icon" size={48} />
-              <h3>Terapia de Casal</h3>
-              <p>Melhoria da comunicação e mediação de conflitos relacionais.</p>
+              <h3>Consultas Online</h3>
+              <p>Apoio terapêutico no conforto do seu lar, com total segurança e sigilo.</p>
             </div>
           </div>
         </div>
