@@ -248,6 +248,7 @@ a {
   color: var(--primary);
   letter-spacing: 1.5px;
   display: inline-block;
+  margin-bottom: 3rem;
 }
 
 /* SPLIT SECTION */
@@ -754,10 +755,11 @@ a {
 }
 
 .abordagem-hero-title {
-  font-size: 3.5rem;
-  margin: 4rem 0;
+  font-size: 4rem;
+  margin: 6rem 0;
   font-weight: 300;
   letter-spacing: 2px;
+  font-style: italic;
 }
 
 .abordagem-hero-subtitle {
