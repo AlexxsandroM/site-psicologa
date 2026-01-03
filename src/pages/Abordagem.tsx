@@ -32,11 +32,11 @@ export default function Abordagem() {
       {/* Hero Section com imagem de fundo */}
       <section className="abordagem-hero">
         <div className="abordagem-hero-overlay"></div>
-        <img 
+        {/*<img 
           src={logoImg} 
           alt="Gestalt-terapia" 
           className="abordagem-hero-bg"
-        />
+        />*/}
         <div className="container abordagem-hero-content">
           <span className="badge">Minha Abordagem</span>
           <h1 className="abordagem-hero-title">Gestalt-Terapia</h1>
