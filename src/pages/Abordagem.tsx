@@ -11,7 +11,6 @@ import {
   Instagram 
 } from 'lucide-react';
 import Carousel from '../components/Carousel';
-import logoImg from '../assets/logo.png';
 import '../App.css';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
