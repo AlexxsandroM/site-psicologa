@@ -10,6 +10,7 @@ import {
   MapPin, 
   Instagram 
 } from 'lucide-react';
+import Carousel from '../components/Carousel';
 import logoImg from '../assets/logo.png';
 import '../App.css';
 
@@ -27,6 +28,33 @@ const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, classNam
 };
 
 export default function Abordagem() {
+  const principles = [
+    {
+      id: 'aqui-agora',
+      title: 'Aqui e Agora',
+      description: 'Foco na experiência presente. O que você está sentindo, pensando e vivenciando neste momento é o ponto de partida para a transformação.',
+      icon: <Eye size={32} />,
+    },
+    {
+      id: 'awareness',
+      title: 'Awareness (Consciência)',
+      description: 'Desenvolvimento da consciência de si mesmo, dos outros e do ambiente. Perceber-se integralmente é o caminho para a mudança autêntica.',
+      icon: <Heart size={32} />,
+    },
+    {
+      id: 'relacao',
+      title: 'Relação Terapêutica',
+      description: 'A terapia acontece no encontro genuíno entre terapeuta e cliente, em uma relação de confiança, respeito e presença autêntica.',
+      icon: <Users size={32} />,
+    },
+    {
+      id: 'responsabilidade',
+      title: 'Responsabilidade',
+      description: 'Reconhecer-se como autor da própria vida. Você tem o poder de fazer escolhas e criar mudanças significativas.',
+      icon: <Lightbulb size={32} />,
+    },
+  ];
+
   return (
     <div className="abordagem-page">
       {/* Hero Section com imagem de fundo */}
@@ -64,47 +92,7 @@ export default function Abordagem() {
             {/* Princípios */}
             <div className="content-section">
               <h2>Princípios Fundamentais</h2>
-              <div className="principles-grid">
-                <div className="principle-card">
-                  <div className="principle-icon">
-                    <Eye size={32} />
-                  </div>
-                  <h3>Aqui e Agora</h3>
-                  <p>
-                    Foco na experiência presente. O que você está sentindo, pensando e vivenciando neste momento é o ponto de partida para a transformação.
-                  </p>
-                </div>
-
-                <div className="principle-card">
-                  <div className="principle-icon">
-                    <Heart size={32} />
-                  </div>
-                  <h3>Awareness (Consciência)</h3>
-                  <p>
-                    Desenvolvimento da consciência de si mesmo, dos outros e do ambiente. Perceber-se integralmente é o caminho para a mudança autêntica.
-                  </p>
-                </div>
-
-                <div className="principle-card">
-                  <div className="principle-icon">
-                    <Users size={32} />
-                  </div>
-                  <h3>Relação Terapêutica</h3>
-                  <p>
-                    A terapia acontece no encontro genuíno entre terapeuta e cliente, em uma relação de confiança, respeito e presença autêntica.
-                  </p>
-                </div>
-
-                <div className="principle-card">
-                  <div className="principle-icon">
-                    <Lightbulb size={32} />
-                  </div>
-                  <h3>Responsabilidade</h3>
-                  <p>
-                    Reconhecer-se como autor da própria vida. Você tem o poder de fazer escolhas e criar mudanças significativas.
-                  </p>
-                </div>
-              </div>
+              <Carousel items={principles} />
             </div>
 
             {/* Como funciona */}

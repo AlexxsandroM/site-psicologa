@@ -10,7 +10,7 @@ import {
   Heart,
   MessageCircle
 } from 'lucide-react';
-import fundoImg from '../assets/fundo.png';
+import fundoImg from '../assets/fundoInicio.jpeg';
 import foto from '../assets/foto.png';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
