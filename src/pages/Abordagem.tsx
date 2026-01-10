@@ -1,33 +1,13 @@
-
-import { Link } from 'react-router-dom';
-import { 
-  Heart, 
-  Eye, 
-  Users, 
-  Lightbulb, 
-  Phone, 
-  Mail, 
-  MapPin, 
-  Instagram 
-} from 'lucide-react';
+import { Heart, Eye, Users, Lightbulb } from 'lucide-react';
+import Button from '../components/Button';
 import Carousel from '../components/Carousel';
+import Footer from '../components/Footer';
+import { CONTACT_INFO } from '../constants/contact';
+import type { PrincipleItem } from '../types';
 import '../App.css';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'primary' | 'outline' | 'white';
-  children: React.ReactNode;
-}
-
-const Button: React.FC<ButtonProps> = ({ variant = 'primary', children, className = '', ...props }) => {
-  return (
-    <button className={`btn btn-${variant} ${className}`} {...props}>
-      {children}
-    </button>
-  );
-};
-
 export default function Abordagem() {
-  const principles = [
+  const principles: PrincipleItem[] = [
     {
       id: 'aqui-agora',
       title: 'Aqui e Agora',
@@ -59,11 +39,6 @@ export default function Abordagem() {
       {/* Hero Section com imagem de fundo */}
       <section className="abordagem-hero">
         <div className="abordagem-hero-overlay"></div>
-        {/*<img 
-          src={logoImg} 
-          alt="Gestalt-terapia" 
-          className="abordagem-hero-bg"
-        />*/}
         <div className="container abordagem-hero-content">
           <span className="badge">Minha Abordagem</span>
           <h1 className="abordagem-hero-title">Gestalt-Terapia</h1>
@@ -133,55 +108,19 @@ export default function Abordagem() {
                 <p>
                   Vamos trabalhar juntos para que você possa se descobrir, se aceitar e viver de forma mais plena e autêntica.
                 </p>
-                <button 
-                  className="btn btn-primary"
-                  onClick={() => window.open("https://wa.me/5534999855035", "_blank")}
+                <Button 
+                  onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank")}
+                  variant="primary"
                 >
                   Agendar uma Sessão
-                </button>
+                </Button>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* FOOTER */}
-      <footer id="contato" className="footer">
-        <div className="container footer-grid">
-          <div className="footer-brand">
-            <h2>Waldirene Dias</h2>
-            <p className="crp-text">Psicóloga Clínica | CRP 04/69765</p>
-            <div className="social-links">
-              <a href="https://www.instagram.com/wal.dias.psi/" aria-label="Instagram"><Instagram size={24} /></a>
-              <a href="mailto:waldirene.dias.psi@hotmail.com" aria-label="E-mail"><Mail size={24} /></a>
-            </div>
-          </div>
-
-          <div className="footer-links">
-            <h4>Navegação</h4>
-            <Link to="/">Início</Link>
-            <a href="/#sobre">Sobre Mim</a>
-            <a href="/#servicos">Serviços</a>
-            <a href="/#contato">Contato</a>
-          </div>
-
-          <div className="footer-contact">
-            <h4>Agendamentos</h4>
-            <div className="contact-item">
-              <Phone size={20} />
-              <a href="tel:+5534999855035">(34) 99985-5035</a>
-            </div>
-            <div className="contact-item">
-              <MapPin size={20} />
-              <span>R. Santos Dumont, 163 - Centro, Araxá - MG</span>
-            </div>
-            <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="white" className="footer-btn">Mensagem WhatsApp</Button>
-          </div>
-        </div>
-        <div className="container footer-bottom">
-          <p>&copy; {new Date().getFullYear()} Waldirene Dias. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
