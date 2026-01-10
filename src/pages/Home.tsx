@@ -85,10 +85,10 @@ export default function Home() {
               Dar sentido à sua história no ritmo que é possível <span className="italic">para você.</span>
             </h1>
             <p className="hero-description">
-              Encontre um lugar seguro para explorar as suas emoções, curar feridas e redescobrir o seu equilíbrio interior.
+              Encontre um lugar seguro para explorar as suas emoções, e redescobrir o seu equilíbrio interior.
             </p>
             <div className="hero-actions">
-              <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="primary">Agendar Consulta</Button>
+              <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="primary">Agendar Sessão</Button>
               <Button variant="white" onClick={() => navigate('/abordagem')}>A Minha Abordagem</Button>
             </div>
           </div>
@@ -99,11 +99,16 @@ export default function Home() {
       <SplitSection
         id="sobre"
         imageSrc={foto}
-        title="Olá, sou a Psicologa Waldirene!"
+        title="Olá, sou a Waldirene!"
         subtitle="Quem Sou"
       >
         <p>
-        Sinta-se muito bem vindo(a) por aqui! Meu nome é Waldirene e será um prazer te acompanhar em sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e idosos em um ambiente seguro, fundamentado na empatia, escuta ativa e acolhimento genuíno. Juntos, trabalharemos para ampliar a sua consciência sobre quem você é, e o que precisa no aqui e agora, permitindo que o contato consigo mesmo(a) se torne mais claro e verdadeiro. Acredito que cada pessoa traz consigo uma história única, repleta de desafios pessoais e também apresenta um potencial extraordinário de crescimento. O objetivo é capacitar você a se perceber integralmente, honrar suas necessidades e descobrir novas e potentes formas de viver uma vida plena e autêntica.
+        Sinta-se muito
+bem vindo(a) por
+aqui! Será um
+prazer te
+acompanhar em
+sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e idosos em um ambiente seguro, fundamentado na empatia, escuta ativa e acolhimento genuíno. Juntos, trabalharemos para ampliar a sua consciência sobre quem você é, e o que precisa no aqui e agora, permitindo que o contato consigo mesmo(a) se torne mais claro e verdadeiro. Acredito que cada pessoa traz consigo uma história única, repleta de desafios pessoais e também apresenta um potencial extraordinário de crescimento. O objetivo é capacitar você a se perceber integralmente, honrar suas necessidades e descobrir novas e potentes formas de viver uma vida plena e autêntica.
         </p>
       </SplitSection>
 
@@ -114,6 +119,7 @@ export default function Home() {
           <h2 className="highlight-text">
             "Não somos o que nos aconteceu; somos o que escolhemos tornar-nos."
           </h2>
+          <p className="quote-author">Jean Paul Sartre</p>
           <div className="highlight-divider"></div>
         </div>
       </section>
@@ -129,7 +135,7 @@ export default function Home() {
             <div className="service-card">
               <Heart className="icon" size={48} />
               <h3>Terapia Individual</h3>
-              <p>Atenção a pessoas adultas (18+) com foco em ansiedade, depressão e fortalecimento da autoestima.</p>
+              <p>Atendimento a pessoas adultas (18+)</p>
             </div>
             <div className="service-card featured">
               <Calendar className="icon" size={48} />
@@ -138,8 +144,8 @@ export default function Home() {
             </div>
             <div className="service-card">
               <MessageCircle className="icon" size={48} />
-              <h3>Consultas Online</h3>
-              <p>Apoio terapêutico no conforto do seu lar, com total segurança e sigilo.</p>
+              <h3>Consultas on-line</h3>
+              <p>Atendimento psicológico no conforto do seu lar, com total sigilo e segurança</p>
             </div>
           </div>
         </div>
