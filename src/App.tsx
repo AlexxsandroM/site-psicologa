@@ -4,6 +4,7 @@ import { Menu, X } from 'lucide-react';
 import './App.css';
 import Home from './pages/Home';
 import Abordagem from './pages/Abordagem';
+import logo from './assets/logo.png';
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   variant?: 'primary' | 'outline' | 'white';
@@ -42,8 +43,11 @@ function Layout({ children }: { children: React.ReactNode }) {
       <header className={`header ${isScrolled ? 'scrolled' : ''}`}>
         <div className="container nav-container">
           <Link to="/" className="logo" onClick={() => setIsMenuOpen(false)}>
-            <h1>Psicóloga Waldirene Dias</h1>
-            <span>Psicologia Clínica</span>
+            <img src={logo} alt="Logo" className="logo-img" />
+            <div className="logo-text">
+              <h1>Psicóloga Waldirene Dias</h1>
+              <span>Psicologia Clínica</span>
+            </div>
           </Link>
           <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
             <a href="/#inicio" onClick={() => setIsMenuOpen(false)}>Início</a>
