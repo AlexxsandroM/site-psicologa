@@ -89,7 +89,7 @@ export default function Home() {
             </p>
             <div className="hero-actions">
               <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="primary">Agendar Sessão</Button>
-              <Button variant="white" onClick={() => navigate('/abordagem')}>A Minha Abordagem</Button>
+              <Button variant="outline" onClick={() => navigate('/abordagem')}>A Minha Abordagem</Button>
             </div>
           </div>
         </div>
@@ -179,7 +179,7 @@ sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e i
             </div>
             <div className="contact-item">
               <MapPin size={20} />
-              <span>R. Santos Dumont, 163 - Jardim Santa Rita</span>
+              <span>R. Santos Dumont, 163 - Centro, Araxá - MG</span>
             </div>
             <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="white" className="footer-btn">Mensagem WhatsApp</Button>
           </div>

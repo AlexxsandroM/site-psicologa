@@ -173,7 +173,7 @@ export default function Abordagem() {
             </div>
             <div className="contact-item">
               <MapPin size={20} />
-              <span>R. Santos Dumont, 163 - Jardim Santa Rita</span>
+              <span>R. Santos Dumont, 163 - Centro, Araxá - MG</span>
             </div>
             <Button onClick={() => window.open("https://wa.me/5534999855035", "_blank")} variant="white" className="footer-btn">Mensagem WhatsApp</Button>
           </div>
