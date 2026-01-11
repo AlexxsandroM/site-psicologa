@@ -120,12 +120,50 @@ npm run preview
 
 ### Com Docker
 
+**Desenvolvimento:**
 ```bash
 # Iniciar com Docker Compose
 docker-compose up
 
 # Parar containers
 docker-compose down
+```
+
+**Produção:**
+```bash
+# Build e iniciar em modo produção com nginx
+docker-compose -f docker-compose.prod.yml up --build -d
+
+# Parar produção
+docker-compose -f docker-compose.prod.yml down
+```
+
+### Deploy em Produção
+
+Para evitar erros 404 ao acessar rotas diretamente (como `/abordagem`), configure seu servidor:
+
+**Nginx:**
+O `Dockerfile.prod` já inclui a configuração necessária:
+```nginx
+location / {
+    try_files $uri $uri/ /index.html;
+}
+```
+
+**Apache:**
+O arquivo `.htaccess` já está incluído em `public/`:
+```apache
+RewriteEngine On
+RewriteRule ^index\.html$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.html [L]
+```
+
+**Vercel/Netlify:**
+O arquivo `public/_redirects` já está configurado:
+```
+/* /index.html 200
 ```
 
 ### Linting
