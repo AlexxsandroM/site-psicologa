@@ -44,6 +44,8 @@ export default function Carousel({ items }: CarouselProps) {
     setCurrentIndex(prev => Math.min(maxIndex, prev + 1));
   };
 
+  const itemWidth = 100 / itemsPerView;
+
   return (
     <div className="carousel-container">
       <div className="carousel-wrapper">
@@ -60,15 +62,15 @@ export default function Carousel({ items }: CarouselProps) {
           <div
             className="carousel-track"
             style={{
-              transform: `translateX(-${(currentIndex / items.length) * 100}%)`,
-              width: `${items.length * 100}%`,
+              transform: `translateX(-${currentIndex * itemWidth}%)`,
+              width: `${(items.length / itemsPerView) * 100}%`,
             }}
           >
             {items.map((item) => (
               <div
                 key={item.id}
                 className="carousel-item"
-                style={{ width: `${100 / items.length}%` }}
+                style={{ width: `${itemWidth}%` }}
               >
                 <div className="principle-card">
                   <div className="principle-icon">
