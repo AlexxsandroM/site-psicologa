@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import Button from './Button';
 import { CONTACT_INFO } from '../constants/contact';
