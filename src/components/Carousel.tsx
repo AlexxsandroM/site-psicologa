@@ -68,7 +68,7 @@ export default function Carousel({ items }: CarouselProps) {
               <div
                 key={item.id}
                 className="carousel-item"
-                style={{ width: `calc(${100 / items.length}% - 0px)` }}
+                style={{ width: `${100 / (items.length / itemsPerView)}%` }}
               >
                 <div className="principle-card">
                   <div className="principle-icon">
