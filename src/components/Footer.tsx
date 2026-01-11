@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
 
         <div className="footer-links">
           <h4>Navegação</h4>
-          <Link to="/">Início</Link>
+          <Link to="/#inicio">Início</Link>
           <a href="/#sobre">Sobre Mim</a>
           <a href="/#servicos">Serviços</a>
           <a href="/#contato">Contato</a>
