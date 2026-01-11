@@ -60,8 +60,8 @@ export default function Carousel({ items }: CarouselProps) {
           <div
             className="carousel-track"
             style={{
-              transform: `translateX(calc(-${currentIndex * (100 / itemsPerView)}%))`,
-              width: `${(items.length / itemsPerView) * 100}%`,
+              transform: `translateX(-${currentIndex * 100}%)`,
+              width: `${items.length * 100}%`,
             }}
           >
             {items.map((item) => (
