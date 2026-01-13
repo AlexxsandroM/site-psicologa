@@ -59,7 +59,7 @@ sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e i
         <div className="container">
           <Heart className="highlight-icon" size={60} />
           <h2 className="highlight-text">
-            "Não somos o que nos aconteceu; somos o que escolhemos tornar-nos."
+            "Não importa o que fizeram com você. O que importa é o que você faz com o que fizeram com você."
           </h2>
           <p className="quote-author">Jean Paul Sartre</p>
           <div className="highlight-divider"></div>
