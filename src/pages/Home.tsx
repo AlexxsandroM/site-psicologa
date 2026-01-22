@@ -77,7 +77,7 @@ sua trajetória. Com base na Gestalt-terapia ofereço atendimentos a adultos e i
             <div className="service-card">
               <Heart className="icon" size={48} />
               <h3>Terapia Individual</h3>
-              <p>Atendimento à adultas (18+)</p>
+              <p>Atendimento à adultos (18+)</p>
             </div>
             <div className="service-card featured">
               <Calendar className="icon" size={48} />
