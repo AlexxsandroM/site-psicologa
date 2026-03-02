@@ -6,7 +6,6 @@ import Footer from '../components/Footer';
 import { CONTACT_INFO } from '../constants/contact';
 import fundoImg from '../assets/fundoInicio.jpeg';
 import foto from '../assets/foto.png';
-import logo from '../assets/logo.png';
 
 export default function Home() {
   const navigate = useNavigate();
@@ -20,11 +19,6 @@ export default function Home() {
           src={fundoImg} 
           alt="Consultório acolhedor" 
           className="hero-bg"
-        />
-        <img 
-          src={logo} 
-          alt="Logo" 
-          className="hero-logo"
         />
         <div className="container hero-content">
           <div className="hero-text-box">
