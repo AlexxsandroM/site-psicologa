@@ -26,6 +26,10 @@ export default function Home() {
             <h1 className="hero-title">
               O cuidado também pode abrir caminhos de transformação.
             </h1>
+            <p className="hero-quote">
+              "O terapeuta não é aquele que cura. O terapeuta é aquele que cuida. E quando a pessoa se sente cuidada, ela se cura."
+            </p>
+            <p className="quote-author">Jorge Ponciano</p>
             <p className="hero-description">
               Um espaço seguro para explorar suas emoções com escuta, presença e cuidado.
             </p>
@@ -57,10 +61,9 @@ export default function Home() {
         <div className="container">
           <Heart className="highlight-icon" size={60} />
           <h2 className="highlight-text">
-            “O terapeuta não é aquele que cura. O terapeuta é aquele que cuida.<br />
-            E quando a pessoa se sente cuidada, ela se cura.”
+            "Não importa o que fizeram com você. O que importa é o que você faz com o que fizeram com você."
           </h2>
-          <p className="quote-author">— Jorge Ponciano</p>
+          <p className="quote-author">Jean Paul Sartre</p>
           <div className="highlight-divider"></div>
         </div>
       </section>
