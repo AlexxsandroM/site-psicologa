@@ -1,7 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import type { SplitSectionProps } from '../types';
-import OptimizedImage from './OptimizedImage';
 
 const SplitSection: React.FC<SplitSectionProps> = ({ 
   imageSrc, 
@@ -15,8 +14,8 @@ const SplitSection: React.FC<SplitSectionProps> = ({
     <section id={id} className={`split-section ${reversed ? 'reversed' : ''}`}>
       <div className="container split-container">
         <div className="split-image-wrapper">
-          <OptimizedImage
-            baseSrc={imageSrc}
+          <img
+            src={imageSrc}
             alt={title}
             className="split-image"
             loading="lazy"
