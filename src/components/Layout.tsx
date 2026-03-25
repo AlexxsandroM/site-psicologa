@@ -40,14 +40,14 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <span>Psicologia Clínica</span>
             </div>
           </Link>
-          <nav className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
-            <a href="/#inicio" onClick={handleMenuItemClick}>Início</a>
-            <a href="/#sobre" onClick={handleMenuItemClick}>Sobre</a>
-            <a href="/#servicos" onClick={handleMenuItemClick}>Serviços</a>
-            <a href="/#contato" onClick={handleMenuItemClick}>Contato</a>
+          <nav id="main-navigation" className={`nav-menu ${isMenuOpen ? 'open' : ''}`}>
+            <Link to="/#inicio" onClick={handleMenuItemClick}>Início</Link>
+            <Link to="/#sobre" onClick={handleMenuItemClick}>Sobre</Link>
+            <Link to="/#servicos" onClick={handleMenuItemClick}>Serviços</Link>
+            <Link to="/#contato" onClick={handleMenuItemClick}>Contato</Link>
             <div className="nav-cta">
               <Button 
-                onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank")} 
+                onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank", "noopener,noreferrer")} 
                 variant="outline"
               >
                 Agendar Sessão
@@ -55,7 +55,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
             </div>
           </nav>
 
-          <button className="menu-toggle" onClick={handleMenuToggle}>
+          <button
+            className="menu-toggle"
+            onClick={handleMenuToggle}
+            aria-label={isMenuOpen ? 'Fechar menu' : 'Abrir menu'}
+            aria-expanded={isMenuOpen}
+            aria-controls="main-navigation"
+          >
             {isMenuOpen ? <X size={32} /> : <Menu size={32} />}
           </button>
         </div>

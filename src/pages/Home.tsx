@@ -34,7 +34,7 @@ export default function Home() {
               Um espaço seguro para explorar suas emoções com escuta, presença e cuidado.
             </p>
             <div className="hero-actions">
-              <Button onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank")} variant="primary">Agendar Sessão</Button>
+              <Button onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank", "noopener,noreferrer")} variant="primary">Agendar Sessão</Button>
               <Button variant="outline" onClick={() => navigate('/abordagem')}>A Minha Abordagem</Button>
             </div>
           </div>

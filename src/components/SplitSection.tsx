@@ -14,7 +14,13 @@ const SplitSection: React.FC<SplitSectionProps> = ({
     <section id={id} className={`split-section ${reversed ? 'reversed' : ''}`}>
       <div className="container split-container">
         <div className="split-image-wrapper">
-          <img src={imageSrc} alt={title} className="split-image" />
+          <img
+            src={imageSrc}
+            alt={title}
+            className="split-image"
+            loading="lazy"
+            decoding="async"
+          />
           <div className="image-decorator"></div>
         </div>
         <div className="split-content">

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Instagram } from 'lucide-react';
 import Button from './Button';
 import { CONTACT_INFO } from '../constants/contact';
@@ -22,10 +23,10 @@ const Footer: React.FC = () => {
 
         <div className="footer-links">
           <h4>Navegação</h4>
-          <a href="/#inicio">Início</a>
-          <a href="/#sobre">Sobre Mim</a>
-          <a href="/#servicos">Serviços</a>
-          <a href="/#contato">Contato</a>
+          <Link to="/#inicio">Início</Link>
+          <Link to="/#sobre">Sobre Mim</Link>
+          <Link to="/#servicos">Serviços</Link>
+          <Link to="/#contato">Contato</Link>
         </div>
 
         <div className="footer-contact">
@@ -39,7 +40,7 @@ const Footer: React.FC = () => {
             <span>{CONTACT_INFO.address}</span>
           </div>
           <Button 
-            onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank")} 
+            onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank", "noopener,noreferrer")} 
             variant="white" 
             className="footer-btn"
           >

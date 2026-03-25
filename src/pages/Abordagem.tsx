@@ -109,7 +109,7 @@ export default function Abordagem() {
                   Vamos trabalhar juntos para que você possa se descobrir, se aceitar e viver de forma mais plena e autêntica.
                 </p>
                 <Button 
-                  onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank")}
+                  onClick={() => window.open(CONTACT_INFO.whatsapp, "_blank", "noopener,noreferrer")}
                   variant="primary"
                 >
                   Agendar uma Sessão
